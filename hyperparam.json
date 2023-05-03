@@ -1,0 +1,28 @@
+{
+	"_S1_": "Network hyperparameters",
+		"enc_nf": [16, 32, 32, 32], 
+		"dec_nf": [32, 32, 32, 32, 32, 16, 16], 
+		"conv_per_level": 1,
+		"int_steps": 7, 
+		"int_downsize": 1,
+		"bidir": true,
+		"latent_dim": 8,
+		"prior": true,
+
+	"_S2_": "Loss hyperparameters",
+		"image_loss": "ncc",
+		"lambda": 5000,
+		"kappa": 1000,
+		"beta": 1,
+		"kl_weight": 0.1,
+
+	"_S3_": "Data hyperparameters",
+		"xkey": "pCT",
+		"ykey": "rCT",
+		"max": 3000,
+		"min": -1000,
+
+	"_S4_": "Hardware hyperparameters",
+        "shuffle": true,
+        "num_workers": 2
+}
